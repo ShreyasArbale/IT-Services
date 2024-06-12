@@ -1,0 +1,30 @@
+package com.example.maintenance.issue.model_issue
+
+data class IssueItem(
+    val agreement_status: String,
+    val company: String,
+    val customer: String,
+    val custom_department: String,
+    val custom_mob_number: String,
+    val custom_location: String,
+    val custom_office: String,
+    val action_taken: String,
+    val custom_customer_signature: String,
+    val description: String,
+    val docstatus: Int,
+    val doctype: String,
+    val idx: Int,
+    val issue_type: String,
+    val modified_by: String,
+    val name: String,
+    val naming_series: String,
+    val opening_date: String,
+    val opening_time: String,
+    val owner: String,
+    val priority: String,
+    val raised_by: String,
+    val resolution_details: String,
+    val status: String,
+    val subject: String,
+    val via_customer_portal: Int
+)

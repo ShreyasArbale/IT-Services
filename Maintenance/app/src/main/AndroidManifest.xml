@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Maintenance"
+        tools:targetApi="31">
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".calendar.CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".issue.add_issue.AddIssueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".issue.edit_issue.EditIssueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".issue.HomeIssueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".visit_maintenance.edit_visit_maintenance.EditVisitMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warranty_claim.edit_warranty_claim.EditWarrantyClaimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warranty_claim.add_warranty_claim.AddWarrantyClaimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warranty_claim.HomeWarrantyClaimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".visit_maintenance.add_visit_maintenance.AddVisitMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".visit_maintenance.HomeVisitMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".maintenance.edit_maintenance.EditMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".maintenance.add_maintenance.AddMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".maintenance.home_maintenance_activity.HomeMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
